@@ -2,26 +2,64 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  background-color: rgb(4, 4, 12);
+  background-color: #121212;
   font-family: 'Russo One', cursive;
+ /* overflow: scroll;
+*/
 }
+span {
+
+  border-right: 0.2rem solid #777;
+}
+
+.text-effect > .cursor {
+
+  border-right: 0.2rem solid #777;
+}
+/*
+.text-effect > .cursor {
+
+ /* border-right :3px solid;
+ border-right: 0.2rem solid #777;
+}
+*/
 .container-fluid{
 
   width: 100%;
   height: 600px;
   padding: 40px;
-  background-image: url("images/dark_bg.gif");
+ /* background-image: url("images/darkBg.png");
   background-position: 100%;
   background-size: 100% 100%;
+  */
+  background-color: black;
   text-align: center;
+  position: relative;
+}
+.navbar {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+}
+li {
+
+  list-style: none;
+  float: left;
+  padding: 20px;
 }
 .content {
-
+  
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
   padding: 30px;
 }
-.photo {
+.type-effect {
 
-  width: 400px;
+  color: rgb(36, 107, 3);
 }
 .intro {
   
@@ -31,7 +69,7 @@ body {
 .cl {
 
   font-family: 'Roboto Mono';
-  color: rgb(36, 107, 3);
+  
   
 }                    
   
