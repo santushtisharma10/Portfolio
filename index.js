@@ -5,46 +5,43 @@ function TypingEffect(query, wordList, wait) {
     let index = 0;
     let delVal = false;
     let speed = 500;
-    
+
     type();
     function type() {
-        
-        let curIndex = index%wordList.length;
-        let word = wordList[curIndex];
-        console.log(curIndex , word);
-        if(delVal) {
 
-            text = word.substring(0, text.length-1);
+        let curIndex = index % wordList.length;
+        let word = wordList[curIndex];
+        console.log(curIndex, word);
+        if (delVal) {
+
+            text = word.substring(0, text.length - 1);
         }
         else {
 
-            text = word.substring(0, text.length+1);
+            text = word.substring(0, text.length + 1);
         }
         //console.log(word)
         query.innerHTML = text;
         speed = 500
-        if(delVal) {
+        if (delVal) {
 
             speed /= 2;
         }
 
-        if(!delVal && text === word) {
+        if (!delVal && text === word) {
 
             delVal = true;
             speed = wait;
         }
-        else if(delVal && text === "") {
+        else if (delVal && text === "") {
 
             delVal = false;
             index++;
         }
 
-        setTimeout(()=>type(), speed);
+        setTimeout(() => type(), speed);
     }
-    /*console.log("TEsting")
 
-    setTimeout(()=> TypingEffect(query, wordList, wait), wait)*/
-    
 }
 
 
@@ -58,12 +55,12 @@ function init() {
     const wait = txt.getAttribute('data-wait');
     console.log(wait);
     console.log(txt, wordList)
-    //var wordList = txt.getAttribute("data-words");
     TypingEffect(txt, wordList, wait)
 }
 
 // Works to be done
-// create a navbar and about me section
+//about me section
+// skills section
 // create a toggle swtich for background mode []
 
 
