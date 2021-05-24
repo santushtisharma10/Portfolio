@@ -60,7 +60,10 @@ function init() {
 
 // Works to be done
 //about me section
+// contact details on sidelines
 // skills section
+// projects
+// timeline(experience)
 // create a toggle swtich for background mode []
 
 
