@@ -7,13 +7,20 @@ body {
 
 }
 .skills {
-  margin: 2rem;
-  padding: 1rem;
-  background-color: black;
-  border-radius: 3px;
-  height: 400px;
-}
+  margin: 0px;
+  padding: 20px;
+  height: 500px;
 
+}
+.badges {
+
+border-radius: 50%;
+height: 300px;
+width: 300px;
+background-color: #121212;
+box-shadow: inset 10px 10px 20px #0e0e0e,
+  
+}
 span {
 
   border-right: 0.2rem solid #777;
@@ -27,16 +34,28 @@ span {
   margin: 0;
   width: 100%;
   height: 600px;
-  padding: 0;
- /* background-image: url("images/darkBg.png");
-  background-position: 100%;
-  background-size: 100% 100%;
-  */
+  padding: 0px;
   background-color: black;
   text-align: center;
   position: relative;
 }
 
+.icon {
+  display: block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.sidelines {
+  margin: 5px;
+  padding: 5px;
+  position: fixed;
+  height: 250px;
+  width: 5%;
+  bottom: 0px;
+  
+}
 li {
 
   list-style: none;
@@ -65,6 +84,11 @@ li {
 .altFont {
 
   font-family: 'Roboto Mono';
+}
+.about {
+
+  margin: 20px;
+  padding: 10px;
 }    
 /*                
 @media screen (min-width: 400px) {
