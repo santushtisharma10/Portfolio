@@ -1,3 +1,26 @@
+window.addEventListener('scroll', reveal) 
+
+function reveal() {
+var reveal = document.querySelectorAll('.reveal')
+
+for(var i = 0; i < reveal.length; ++i) {
+
+    var winH = window.innerHeight;
+    var top = reveal[i].getBoundingClientRect().top;
+    var num = 150;
+    console.log(winH-top)
+    if(num < winH - top) {
+
+        reveal[i].classList.add('active');
+    }
+    else {
+
+        reveal[i].classList.remove('active');
+    }
+
+}
+}
+
 
 function TypingEffect(query, wordList, wait) {
     wait = parseInt(wait)
@@ -60,9 +83,8 @@ function init() {
 
 // Works to be done
 
-// projects
-// timeline(experience)
-// create a toggle swtich for background mode []
+// popup window for project
+// create a toggle switch for background mode []
 // complete the whole page
 
 
