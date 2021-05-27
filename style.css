@@ -4,22 +4,116 @@ body {
   color: white;
   background-color: #121212;
   font-family: 'Russo One', cursive;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
 
 }
+div {
+
+  margin: 0;
+  padding: 20px;
+}
 .skills {
+
   margin: 0px;
   padding: 20px;
-  height: 500px;
+}
+.exp:nth-child(odd) {
+  
+  float: left;
+  clear: both;
+  transform: translateX(-35px);
+}
+.exp:nth-child(even) {
 
+  float: right;
+  clear: both;
+  transform: translateX(35px);
+}
+.experience::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .badges {
 
+height: 200px;
+width: 200px;
 border-radius: 50%;
-height: 300px;
-width: 300px;
-background-color: #121212;
-box-shadow: inset 10px 10px 20px #0e0e0e,
+background: linear-gradient(145deg, #101010, #131313);
+box-shadow:  10px 10px 20px #070707,
+             -10px -10px 20px #1d1d1d;
+}
+.experience {
+
+  position: relative;
+  background-color: black;
+
+}
+
+.exp {
+
+margin: 30px;
+padding: 40px;
+position: relative;
+border-radius: 30px;
+width: calc(50% - 50px);
+background: linear-gradient(145deg, #1b1b1b, #171717);
+box-shadow:  9px 9px 18px #0a0a0a,
+             -9px -9px 18px #282828;
   
+}
+.exp::before {
+
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  left: -78px;
+
+}
+.exp::after {
+
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10%;
+  left: 96%;
+  background-color: #191919;
+  transform: rotate(45deg);
+}
+.exp:nth-child(even)::after {
+
+  left: -2%;
+}
+.exp:nth-child(odd)::before {
+
+  left: 106%;
+}
+.shape {
+
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #191919;
+  left: 98%;
+  transform: rotate(45deg);
+}
+.card {
+  margin: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 300px;
 }
 span {
 
@@ -47,7 +141,7 @@ span {
   height: 50px;
 }
 
-.sidelines {
+.contact {
   margin: 5px;
   padding: 5px;
   position: fixed;
@@ -89,8 +183,36 @@ li {
 
   margin: 20px;
   padding: 10px;
-}    
-/*                
-@media screen (min-width: 400px) {
+}
 
-}*/
+@media only screen and (max-width: 750px) {
+
+  .exp {
+    width: 80%;
+  }
+  .experience::before {
+
+    left: 10%;
+  }
+  
+
+}
+@media only screen and (max-width: 400px) {
+   
+  .exp {
+
+    width: 100%;
+  }
+  .experience::before {
+
+    display: none;
+  }
+  .exp::after {
+
+    display: none;
+  }
+  .exp::before {
+
+    display: none;
+  }
+}
