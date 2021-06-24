@@ -21,6 +21,10 @@ for(var i = 0; i < reveal.length; ++i) {
 }
 }
 
+function changeMode() {
+
+    // css effects for background change
+}
 
 function TypingEffect(query, wordList, wait) {
     wait = parseInt(wait)
@@ -83,6 +87,7 @@ function init() {
 
 // Works to be done
 
+// + sign to show navbar content
 // popup window for project
 // create a toggle switch for background mode []
 // complete the whole page
