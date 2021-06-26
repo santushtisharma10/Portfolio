@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  background-image: linear-gradient(black, #636363);
+  background-image: linear-gradient(black, #636363 );
 
  /* background-color: #121212;*/
   font-family: 'Russo One', cursive;
