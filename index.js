@@ -1,5 +1,7 @@
 window.addEventListener('scroll', reveal) 
 
+//reveal contents on scroll
+
 function reveal() {
 var reveal = document.querySelectorAll('.reveal')
 
@@ -21,7 +23,7 @@ for(var i = 0; i < reveal.length; ++i) {
 }
 }
 
-//to change the mode 
+//to change the background mode 
 var icon = document.getElementById("icon")
 
 icon.onclick = function() {
@@ -36,6 +38,8 @@ icon.onclick = function() {
         icon.src = "images/moon.png"
     }
 }
+
+// self writing and deleting typing effect
 
 function TypingEffect(query, wordList, wait) {
     wait = parseInt(wait)
@@ -100,7 +104,6 @@ function init() {
 
 // + sign to show navbar content
 // popup window for project
-// create a toggle switch for background mode []
 // complete the whole page
 
 
