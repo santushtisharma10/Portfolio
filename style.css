@@ -1,8 +1,25 @@
+:root {
+/*
+  --background-img: linear-gradient(black, #636363 );
+  --color-1 :white;
+  --color-2 : #121212;
+  */
+  --background-img: linear-gradient(white, #c5b7b7 );
+  --color-1 : black;
+  --color-2 : rgb(201, 176, 176);
+} 
+.dark-theme {
+
+  
+  --background-img: linear-gradient(black, #636363 );
+  --color-1 :white;
+  --color-2 : #121212;
+}
 body {
   margin: 0;
   padding: 0;
-  color: white;
-  background-image: linear-gradient(black, #636363 );
+  color: var(--color-1);
+  background-image: var(--background-img);
 
  /* background-color: #121212;*/
   font-family: 'Russo One', cursive;
@@ -11,6 +28,11 @@ body {
   flex-direction: column;
   
 
+}
+.mode {
+
+  width: 30px;
+  cursor: pointer;
 }
 div {
 
@@ -41,7 +63,7 @@ div {
 .experience::before {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: var(--color-1);
   width: 5px;
   height: 100%;
   left: 50%;
@@ -80,7 +102,7 @@ box-shadow: 9px 9px 18px #0a0a0a;
   height: 40px;
   position: absolute;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--color-1);
   border-radius: 50%;
   left: -78px;
 

@@ -21,9 +21,20 @@ for(var i = 0; i < reveal.length; ++i) {
 }
 }
 
-function changeMode() {
+//to change the mode 
+var icon = document.getElementById("icon")
 
-    // css effects for background change
+icon.onclick = function() {
+
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+
+        icon.src = "images/sun.png"
+    }
+    else {
+
+        icon.src = "images/moon.png"
+    }
 }
 
 function TypingEffect(query, wordList, wait) {
