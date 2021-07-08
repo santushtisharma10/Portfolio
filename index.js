@@ -1,32 +1,32 @@
-window.addEventListener('scroll', reveal) 
+window.addEventListener('scroll', reveal)
 
 //reveal contents on scroll
 
 function reveal() {
-var reveal = document.querySelectorAll('.reveal')
+    var reveal = document.querySelectorAll('.reveal')
 
-for(var i = 0; i < reveal.length; ++i) {
+    for (var i = 0; i < reveal.length; ++i) {
 
-    var winH = window.innerHeight;
-    var top = reveal[i].getBoundingClientRect().top;
-    var num = 150;
-    console.log(winH-top)
-    if(num < winH - top) {
+        var winH = window.innerHeight;
+        var top = reveal[i].getBoundingClientRect().top;
+        var num = 150;
+        console.log(winH - top)
+        if (num < winH - top) {
 
-        reveal[i].classList.add('active');
+            reveal[i].classList.add('active');
+        }
+        else {
+
+            reveal[i].classList.remove('active');
+        }
+
     }
-    else {
-
-        reveal[i].classList.remove('active');
-    }
-
-}
 }
 
 //to change the background mode 
 var icon = document.getElementById("icon")
 
-icon.onclick = function() {
+icon.onclick = function () {
 
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
