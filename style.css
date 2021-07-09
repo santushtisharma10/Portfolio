@@ -4,6 +4,9 @@
   --color-1 : black;
   --color-2 : rgb(201, 176, 176);
   --gcol : rgb(3, 94, 3);
+  --skills:20px 20px 60px #9c9696,
+  -20px -20px 60px #ffffff;
+   --skills-bg: linear-gradient(145deg, #d4cdcd, #fdf4f4);
 } 
 .dark-theme {
 
@@ -73,9 +76,12 @@ div {
 height: 200px;
 width: 200px;
 border-radius: 50%;
-background: linear-gradient(145deg, #101010, #131313);
+background: var(--skills-bg);
+box-shadow: var(--skills);
+/*background: linear-gradient(145deg, #101010, #131313);
 box-shadow:  10px 10px 20px #070707,
              -10px -10px 20px #1d1d1d;
+             */
 }
 .experience {
 
