@@ -1,6 +1,6 @@
 :root {
 
-  --background-img: linear-gradient(white, #c5b7b7 );
+  --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(227,245,245,1) 100%);;
   --color-1 : black;
   --color-2 : rgb(201, 176, 176);
   --gcol : rgb(3, 94, 3);
@@ -17,6 +17,7 @@
   --color-2 : #121212;
 }
 body {
+  background: rgb(2,0, 36);
   margin: 0;
   padding: 0;
   color: var(--color-1);
