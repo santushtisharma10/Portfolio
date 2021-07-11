@@ -1,16 +1,21 @@
 :root {
 
-  --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(227,245,245,1) 100%);;
+  --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
   --color-1 : black;
   --color-2 : rgb(201, 176, 176);
   --gcol : rgb(3, 94, 3);
-  --skills:20px 20px 60px #9c9696,
+  --skills: 20px 20px 60px #666666,
   -20px -20px 60px #ffffff;
-   --skills-bg: linear-gradient(145deg, #d4cdcd, #fdf4f4);
+   --skills-bg:linear-gradient(145deg, #e6e6e6, #ffffff);
+
+   
 } 
 .dark-theme {
 
   
+--skills: 20px 20px 60px #0f0e0e,
+-20px -20px 60px #3b3636;
+--skills-bg:linear-gradient(145deg, #211f1f, #282424);
   --background-img: linear-gradient(black, #636363 );
   --color-1 :white;
   --gcol: greenyellow;
@@ -79,6 +84,7 @@ width: 200px;
 border-radius: 50%;
 background: var(--skills-bg);
 box-shadow: var(--skills);
+padding: 10px;
 /*background: linear-gradient(145deg, #101010, #131313);
 box-shadow:  10px 10px 20px #070707,
              -10px -10px 20px #1d1d1d;
