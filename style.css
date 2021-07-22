@@ -4,8 +4,8 @@
   --color-1 : black;
   --color-2 : rgb(201, 176, 176);
   --gcol : rgb(3, 94, 3);
-  --skills: 20px 20px 60px #666666,
-  -20px -20px 60px #ffffff;
+  --skills: 20px -20px 60px #e0e0e0,
+  -20px 20px 60px #ffffff;
    --skills-bg:linear-gradient(145deg, #e6e6e6, #ffffff);
 
    
@@ -13,8 +13,8 @@
 .dark-theme {
 
   
---skills: 20px 20px 60px #0f0e0e,
--20px -20px 60px #3b3636;
+--skills: 20px -20px 60px #0f0e0e,
+-20px 20px 60px #3b3636;
 --skills-bg:linear-gradient(145deg, #211f1f, #282424);
   --background-img: linear-gradient(black, #636363 );
   --color-1 :white;
@@ -184,8 +184,9 @@ span {
 .icon {
   display: block;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
 }
 
 .contact {
