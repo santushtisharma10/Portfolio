@@ -36,6 +36,23 @@ body {
   
 
 }
+/*Glowing text*/
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #22cc16, 0 0 40px #22cc16, 0 0 50px #22cc16, 0 0 60px #22cc16, 0 0 70px #22cc16;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #11ff00, 0 0 40px #11ff00, 0 0 50px #11ff00, 0 0 60px #11ff00, 0 0 70px #11ff00, 0 0 80px #11ff00;
+  }
+}
 .mode {
 
   width: 30px;
@@ -184,7 +201,7 @@ li {
 
   list-style: none;
   float: left;
-  padding: 20px;
+  padding: 25px;
   color: gray;
 }
 .container  {
