@@ -32,12 +32,12 @@ icon.onclick = function () {
     if (document.body.classList.contains("dark-theme")) {
 
         icon.src = "images/sun.png"
-        //github.src = "images/Github-Light.png"
+        github.src = "images/Github-Light.png"
     }
     else {
 
         icon.src = "images/moon.png"
-        //github.src = "images/Github-Dark.png"
+        github.src = "images/Github-Dark.png"
     }
 }
 
