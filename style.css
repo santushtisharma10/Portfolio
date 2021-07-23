@@ -200,12 +200,16 @@ span {
 }
 
 .contact {
-  margin: 5px;
-  padding: 5px;
+  margin: 2px;
+  padding: 2px;
   position: fixed;
-  height: 250px;
+  height: 200px;
   width: 5%;
   bottom: 0;
+}
+.contact img {
+
+  height: 35px;
 }
 li {
 
