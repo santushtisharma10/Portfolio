@@ -104,8 +104,10 @@ function init() {
 
 // Works to be done
 
-// + sign to show navbar content
+// images add
+// links to add
+// download fixed sign to download the resume
 // popup window for project
-// complete the whole page
+// footer of the portfolio
 
 
