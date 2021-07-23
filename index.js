@@ -104,7 +104,7 @@ function init() {
 
 // Works to be done
 
-// images add
+// contact icons and project images or icons add
 // links to add
 // download fixed sign to download the resume
 // popup window for project
