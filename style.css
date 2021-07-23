@@ -1,7 +1,7 @@
 :root {
 
   --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
-  --color-1 : black;
+  --color-1 : white;
   --color-2 : rgb(201, 176, 176);
   --gcol : rgb(3, 94, 3);
   --skills: 20px -20px 60px #e0e0e0,
@@ -88,6 +88,7 @@ div {
   content: "";
   position: absolute;
   background-color: var(--color-1);
+  border:1px black ridge ;
   width: 5px;
   height: 100%;
   left: 50%;
@@ -120,8 +121,8 @@ padding: 40px;
 position: relative;
 border-radius: 30px;
 width: calc(50% - 50px);
-background: linear-gradient(145deg, #1b1b1b, #171717);
-box-shadow: 9px 9px 18px #0a0a0a;
+background-color: rgb(239, 247, 247);/*linear-gradient(145deg, white, rgb(239, 247, 247));*/
+box-shadow: 9px 9px 18px #857f7f;
   
 }
 .exp::before {
@@ -132,6 +133,7 @@ box-shadow: 9px 9px 18px #0a0a0a;
   position: absolute;
   border-radius: 10px;
   background-color: var(--color-1);
+  border: 2px rgb(160, 206, 212) ridge;
   border-radius: 50%;
   left: -78px;
 
@@ -142,19 +144,25 @@ box-shadow: 9px 9px 18px #0a0a0a;
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 25%;
-  left: 96%;
-  /*background-color: #191919;*/
+ /* top: 25px;
+  left: 96px;*/
+  background-color : black;/*rgb(239, 247, 247);/*191919*/
   transform: rotate(45deg);
 }
 .exp:nth-child(even)::after {
 
   /*background-color: #1b1b1b;*/
-  left: -3%;
+  left: -18px;
+  top: 50%;
+}
+.exp:nth-child(odd)::after {
+
+  right  : -18px;
+  bottom : 50%;
 }
 .exp:nth-child(odd)::before {
 
-  left: 106%;
+  left: 112%;
 }
 .project {
   position: relative;
@@ -192,24 +200,20 @@ span {
 }
 
 .icon {
+
   display: block;
   margin: 10px;
   width: 50px;
   height: 50px;
-  
 }
 
 .contact {
   margin: 2px;
   padding: 2px;
   position: fixed;
-  height: 200px;
+  height: 250px;
   width: 5%;
   bottom: 0;
-}
-.contact img {
-
-  height: 35px;
 }
 li {
 
