@@ -133,10 +133,8 @@ box-shadow: 9px 9px 18px #857f7f;
   position: absolute;
   border-radius: 10px;
   background-color: var(--color-1);
-  border: 2px rgb(160, 206, 212) ridge;
+  border: 2px rgb(188, 225, 230) ridge;
   border-radius: 50%;
-  left: -78px;
-
 }
 .exp::after {
 
@@ -146,23 +144,29 @@ box-shadow: 9px 9px 18px #857f7f;
   position: absolute;
  /* top: 25px;
   left: 96px;*/
-  background-color : black;/*rgb(239, 247, 247);/*191919*/
+  background-color :rgb(239, 247, 247);/*191919*/
   transform: rotate(45deg);
 }
 .exp:nth-child(even)::after {
 
   /*background-color: #1b1b1b;*/
   left: -18px;
-  top: 50%;
+  top: 10%;
 }
 .exp:nth-child(odd)::after {
 
   right  : -18px;
-  bottom : 50%;
+  bottom : 80%;
 }
 .exp:nth-child(odd)::before {
 
-  left: 112%;
+  right: -75px;
+  bottom: 80%;
+}
+.exp:nth-child(even)::before {
+
+  left: -75px;
+  top: 10%;
 }
 .project {
   position: relative;
