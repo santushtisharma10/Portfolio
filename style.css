@@ -105,6 +105,21 @@ box-shadow: var(--skills);
 position: relative;
 
 }
+button {
+
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: rgb(194, 205, 214);
+  border: none;
+  outline: none;
+}
+button:hover {
+  
+  height: 50px;
+  width: 50px;
+}
 .badges img{
 
   position: absolute;
@@ -177,6 +192,7 @@ box-shadow: 9px 9px 18px #857f7f;
 }
 .project {
   position: relative;
+  text-align: center;
 
 }
 button {
