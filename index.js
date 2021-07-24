@@ -102,12 +102,28 @@ function init() {
     TypingEffect(txt, wordList, wait)
 }
 
+var mybutton = document.getElementById("moveTop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  
+  document.documentElement.scrollTop = 0;
+}
+
 // Works to be done
 
-// project images or icons add
-// links to add
-// download fixed sign to download the resume
-// popup window for project
-// footer of the portfolio
+// Project Section
+// footer
+// modify content
 
 
