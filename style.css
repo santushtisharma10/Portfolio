@@ -1,7 +1,7 @@
 :root {
 
   --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
-  --color-1 : white;
+  --color-1 :black;
   --color-2 : rgb(201, 176, 176);
   --gcol : rgb(3, 94, 3);
   --skills: 20px -20px 60px #e0e0e0,
@@ -12,7 +12,6 @@
 } 
 .dark-theme {
 
-  
 --skills: 20px -20px 60px #0f0e0e,
 -20px 20px 60px #3b3636;
 --skills-bg:linear-gradient(145deg, #211f1f, #282424);
@@ -52,6 +51,13 @@ body {
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #11ff00, 0 0 40px #11ff00, 0 0 50px #11ff00, 0 0 60px #11ff00, 0 0 70px #11ff00, 0 0 80px #11ff00;
   }
+}
+a {
+
+  color: inherit;
+}
+a:hover {
+  color: inherit;
 }
 .mode {
 
