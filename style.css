@@ -69,6 +69,17 @@ div {
   margin: 0;
   padding: 20px;
 }
+#project-img {
+
+  opacity: 0.7;
+  height: 90px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .skills {
 
   margin: 0px;
