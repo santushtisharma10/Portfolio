@@ -122,6 +122,19 @@ box-shadow: var(--skills);
 position: relative;
 
 }
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
 button {
 
   border-radius: 50%;
@@ -216,6 +229,7 @@ box-shadow: 9px 9px 18px #857f7f;
   text-align: center;
 
 }
+
 button {
   position: absolute;
   bottom: 0;
@@ -246,7 +260,12 @@ span {
   text-align: center;
   position: relative;
 }
+.end {
 
+height: 100px;
+background-color: rgb(240, 232, 232);/*linear-gradient(145deg, white, rgb(239, 247, 247));*/
+box-shadow: 9px 9px 18px #857f7f;
+}
 .icon {
 
   display: block;

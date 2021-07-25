@@ -120,11 +120,23 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Works to be done
 
-// Project Section
-// footer
-// modify content
-// check final changes
+//overlay effect for project cards
+/*
+function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+  */
+
+// content changes and link modification
+
+
+// Fututre scope
+// overlay effect on project cards
+
 
 
