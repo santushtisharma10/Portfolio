@@ -1,4 +1,4 @@
-:root {
+.light-theme {
 
   --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
   --color-1 :black;
@@ -7,10 +7,10 @@
   --skills: 20px -20px 60px #e0e0e0,
   -20px 20px 60px #ffffff;
    --skills-bg:linear-gradient(145deg, #e6e6e6, #ffffff);
-
+--card-col: #e0e0e0;
    
 } 
-.dark-theme {
+:root {
 
 --skills: 20px -20px 60px #0f0e0e,
 -20px 20px 60px #3b3636;
@@ -19,6 +19,7 @@
   --color-1 :white;
   --gcol: greenyellow;
   --color-2 : #121212;
+  --card-col: #636363 ;
 }
 body {
   background: rgb(2,0, 36);
@@ -32,7 +33,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
+  position: relative;
 
 }
 /*Glowing text*/
@@ -73,6 +74,11 @@ div {
 
   opacity: 0.7;
   height: 90px;
+
+}
+.card {
+
+  background-color:  var(--card-col);
 }
 .center {
   display: block;
@@ -225,6 +231,7 @@ box-shadow: 9px 9px 18px #857f7f;
   top: 10%;
 }
 .project {
+  
   position: relative;
   text-align: center;
 

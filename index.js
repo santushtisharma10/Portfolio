@@ -28,16 +28,17 @@ var icon = document.getElementById("icon")
 
 icon.onclick = function () {
 
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-
-        icon.src = "images/sun.png"
-        github.src = "images/Github-Light.png"
-    }
-    else {
+    document.body.classList.toggle("light-theme");
+    if (document.body.classList.contains("light-theme")) {
 
         icon.src = "images/moon.png"
         github.src = "images/Github-Dark.png"
+        
+    }
+    else {
+
+       icon.src = "images/sun.png"
+       github.src = "images/Github-Light.png"
     }
 }
 
@@ -124,6 +125,7 @@ function topFunction() {
 //overlay effect for project cards
 /*
 function on() {
+
     document.getElementById("overlay").style.display = "block";
   }
   
