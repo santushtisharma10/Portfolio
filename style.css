@@ -2,12 +2,13 @@
 
   --background-img: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
   --color-1 :black;
-  --color-2 : rgb(201, 176, 176);
+  --color-2 : rgb(243, 242, 242);
   --gcol : rgb(3, 94, 3);
   --skills: 20px -20px 60px #e0e0e0,
   -20px 20px 60px #ffffff;
    --skills-bg:linear-gradient(145deg, #e6e6e6, #ffffff);
 --card-col: #e0e0e0;
+--exp-col:#cac5c5;
    
 } 
 :root {
@@ -20,6 +21,7 @@
   --gcol: greenyellow;
   --color-2 : #121212;
   --card-col: #636363 ;
+  --exp-col: #383838;
 }
 body {
   background: rgb(2,0, 36);
@@ -110,8 +112,8 @@ div {
 .experience::before {
   content: "";
   position: absolute;
-  background-color: var(--color-1);
-  border:1px black ridge ;
+  background-color: var(--exp-col);
+
   width: 5px;
   height: 100%;
   left: 50%;
@@ -183,7 +185,7 @@ padding: 40px;
 position: relative;
 border-radius: 30px;
 width: calc(50% - 50px);
-background-color: rgb(239, 247, 247);/*linear-gradient(145deg, white, rgb(239, 247, 247));*/
+background-color: var(--exp-col);/*rgb(239, 247, 247);/*linear-gradient(145deg, white, rgb(239, 247, 247));*/
 box-shadow: 9px 9px 18px #857f7f;
   
 }
@@ -194,8 +196,7 @@ box-shadow: 9px 9px 18px #857f7f;
   height: 40px;
   position: absolute;
   border-radius: 10px;
-  background-color: var(--color-1);
-  border: 2px rgb(188, 225, 230) ridge;
+  background-color: var(--exp-col);
   border-radius: 50%;
 }
 .exp::after {
@@ -206,7 +207,7 @@ box-shadow: 9px 9px 18px #857f7f;
   position: absolute;
  /* top: 25px;
   left: 96px;*/
-  background-color :rgb(239, 247, 247);/*191919*/
+  background-color :var(--exp-col);/*rgb(239, 247, 247);/*191919*/
   transform: rotate(45deg);
 }
 .exp:nth-child(even)::after {
@@ -270,8 +271,11 @@ span {
 .end {
 
 height: 100px;
-background-color: rgb(240, 232, 232);/*linear-gradient(145deg, white, rgb(239, 247, 247));*/
-box-shadow: 9px 9px 18px #857f7f;
+color: var(--color-1);
+background-color: var(--color-2);
+/*
+background-color: rgb(240, 232, 232);/*linear-gradient(145deg, white, rgb(239, 247, 247));*
+box-shadow: 9px 9px 18px #857f7f;*/
 }
 .icon {
 
