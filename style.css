@@ -38,6 +38,7 @@ body {
   position: relative;
 
 }
+ 
 /*Glowing text*/
 .glow {
   font-size: 80px;
@@ -130,6 +131,15 @@ box-shadow: var(--skills);
 position: relative;
 
 }
+
+.badges img{
+
+  position: absolute;
+  height: 150px;
+  width: 150px;
+
+}
+/*
 #overlay {
   position: fixed;
   display: none;
@@ -143,6 +153,7 @@ position: relative;
   z-index: 2;
   cursor: pointer;
 }
+*/
 button {
 
   border-radius: 50%;
@@ -161,13 +172,6 @@ button:hover {
   
   height: 50px;
   width: 50px;
-}
-.badges img{
-
-  position: absolute;
-  height: 150px;
-  width: 150px;
-
 }
 .carousel-indicators li {
 
@@ -277,21 +281,71 @@ background-color: var(--color-2);
 background-color: rgb(240, 232, 232);/*linear-gradient(145deg, white, rgb(239, 247, 247));*
 box-shadow: 9px 9px 18px #857f7f;*/
 }
+/*
 .icon {
-
   display: block;
   margin: 10px;
   width: 50px;
   height: 50px;
+
+
+}
+*/
+
+.icon {
+
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 9px;
+  
+}
+.icon img{
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+
 }
 
 .contact {
-  margin: 2px;
+  margin: 0;
+  text-align: center;
   padding: 2px;
   position: fixed;
   height: 250px;
   width: 5%;
   bottom: 0;
+  
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.mail:hover .tooltiptext {
+  visibility: visible;
 }
 
 .moveTop {
