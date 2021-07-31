@@ -23,11 +23,22 @@ function reveal() {
     }
 }
 
+//To fetch project details from github repository
+/*
+const apiUrl = "https://api.github.com/users/santushtisharma10/search/"
+
+fetch(apiUrl)
+.then(res=>res.json())
+.then(data=>console.log(data))
+*/
+
 //to change the background mode 
 var icon = document.getElementById("icon")
 
+
 icon.onclick = function () {
 
+    
     document.body.classList.toggle("light-theme");
     if (document.body.classList.contains("light-theme")) {
 
@@ -56,7 +67,7 @@ function TypingEffect(query, wordList, wait) {
 
         let curIndex = index % wordList.length;
         let word = wordList[curIndex];
-        console.log(curIndex, word);
+        //console.log(curIndex, word);
         if (delVal) {
 
             text = word.substring(0, text.length - 1);
@@ -90,7 +101,7 @@ function TypingEffect(query, wordList, wait) {
 }
 
 
-console.log("HEllo")
+//console.log("HEllo")
 
 init()
 function init() {
@@ -98,8 +109,8 @@ function init() {
     var txt = document.querySelector('.text-effect');
     const wordList = JSON.parse(txt.getAttribute('data-words'));
     const wait = txt.getAttribute('data-wait');
-    console.log(wait);
-    console.log(txt, wordList)
+    //console.log(wait);
+    //console.log(txt, wordList)
     TypingEffect(txt, wordList, wait)
 }
 
