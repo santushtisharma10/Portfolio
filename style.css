@@ -154,7 +154,7 @@ position: relative;
   cursor: pointer;
 }
 */
-button {
+.btn {
 
   border-radius: 50%;
   width: 40px;
@@ -164,11 +164,11 @@ button {
   border: none;
   outline: none;
 }
-button:focus {
+.btn:focus {
   border: none;
   outline: none;
 }
-button:hover {
+.btn:hover {
   
   height: 50px;
   width: 50px;
@@ -354,6 +354,9 @@ box-shadow: 9px 9px 18px #857f7f;*/
   position: fixed;
   right: 30px;
   bottom: 30px;
+}
+a{
+  text-decoration: none;
 }
 li {
 
