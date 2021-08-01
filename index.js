@@ -31,7 +31,20 @@ fetch(apiUrl)
 .then(res=>res.json())
 .then(data=>console.log(data))
 */
+var btn = document.getElementById("btn+")
 
+btn.onclick = function() {
+
+    document.body.classList.toggle("btn-")
+    if(document.body.classList.contains("btn-")) {
+
+        btn.innerHTML = "-"
+    }
+    else {
+
+        btn.innerHTML = "+"
+    }
+}
 //to change the background mode 
 var icon = document.getElementById("icon")
 
