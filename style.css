@@ -159,7 +159,7 @@ position: relative;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  font-size: 30px;
+  font-size: 25px;
   background-color: rgb(194, 205, 214);
   border: none;
   outline: none;
@@ -242,9 +242,22 @@ box-shadow: 9px 9px 18px #857f7f;
 
 }
 
-button {
+.btn {
   position: absolute;
   bottom: 0;
+}
+.proj-btn {
+
+  padding: 10px;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+}
+.proj-btn:hover {
+
+  background-color: var(--gcol);
+  color: var(--color-2);
 }
 /*
 button[aria-expanded= "true"] {
