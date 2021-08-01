@@ -10,7 +10,7 @@ function reveal() {
         var winH = window.innerHeight;
         var top = reveal[i].getBoundingClientRect().top;
         var num = 150;
-        console.log(winH - top)
+        //console.log(winH - top)
         if (num < winH - top) {
 
             reveal[i].classList.add('active');
@@ -116,9 +116,10 @@ function init() {
 
 var mybutton = document.getElementById("moveTop");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function(){scrollFunction()};
 
 function scrollFunction() {
+console.log("sroll")
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {

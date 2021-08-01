@@ -336,8 +336,8 @@ box-shadow: 9px 9px 18px #857f7f;*/
 .tooltiptext {
   visibility: hidden;
   width: 300px;
-  background-color: black;
-  color: #fff;
+  background-color:var(--color-1);
+  color: var(--color-2);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -355,7 +355,7 @@ box-shadow: 9px 9px 18px #857f7f;*/
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent black transparent transparent;
+  border-color: transparent var(--color-1) transparent transparent;
 }
 .mail:hover .tooltiptext {
   visibility: visible;
