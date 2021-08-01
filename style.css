@@ -110,17 +110,7 @@ div {
 
   text-align: center;
 }
-.experience::before {
-  content: "";
-  position: absolute;
-  background-color: var(--exp-col);
 
-  width: 5px;
-  height: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
 .badges {
 
 height: 200px;
@@ -181,7 +171,20 @@ position: relative;
 
   position: relative;
 }
+/*line in experience section*/
+.experience::before {
+  content: "";
+  position: absolute;
+  background-color: var(--exp-col);
 
+  width: 5px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.1px var(--color-1) solid;
+
+}
+/*boxes in experience section*/
 .exp {
 
 margin: 30px;
@@ -193,6 +196,8 @@ background-color: var(--exp-col);/*rgb(239, 247, 247);/*linear-gradient(145deg, 
 box-shadow: 9px 9px 18px #857f7f;
   
 }
+
+/* circle on the line*/
 .exp::before {
 
   content: "";
@@ -202,7 +207,9 @@ box-shadow: 9px 9px 18px #857f7f;
   border-radius: 10px;
   background-color: var(--exp-col);
   border-radius: 50%;
+  border: 2px var(--color-1) solid;
 }
+/*triangle on the boxes*/
 .exp::after {
 
   content: "";
@@ -213,6 +220,7 @@ box-shadow: 9px 9px 18px #857f7f;
   left: 96px;*/
   background-color :var(--exp-col);/*rgb(239, 247, 247);/*191919*/
   transform: rotate(45deg);
+
 }
 .exp:nth-child(even)::after {
 
@@ -274,8 +282,9 @@ span {
 .photo {
 
   text-align: center;
-}
 
+  padding: 0;
+}
 .container-fluid{
   margin: 0;
   width: 100%;
@@ -407,7 +416,14 @@ li {
   margin: 20px;
   padding: 10px;
 }
+card {
 
+  transition: transform 0.2s ease;
+}
+.card:hover {
+
+  transform: scale(1.1);
+}
 .reveal {
 
   position: relative;
