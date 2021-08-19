@@ -268,14 +268,7 @@ box-shadow: 9px 9px 18px #857f7f;
   color: var(--color-2);
 }
 
-/*
-button[aria-expanded= "true"] {
-  
-  bottom: 0;
-}
-/*
 
-*/
 span {
 
   border-right: 0.2rem solid #777;
