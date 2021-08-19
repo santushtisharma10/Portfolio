@@ -159,7 +159,9 @@ function on() {
   }
   */
 
-// content changes and link modification
+//to be fixed
+// achievements section content
+// mobile view
 
 
 // Fututre scope
