@@ -122,6 +122,7 @@ div {
 
 height: 200px;
 width: 200px;
+margin: auto;
 border-radius: 50%;
 background: var(--skills-bg);
 box-shadow: var(--skills);
