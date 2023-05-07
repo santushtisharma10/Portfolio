@@ -23,14 +23,6 @@ function reveal() {
     }
 }
 
-//To fetch project details from github repository
-/*
-const apiUrl = "https://api.github.com/users/santushtisharma10/search/"
-
-fetch(apiUrl)
-.then(res=>res.json())
-.then(data=>console.log(data))
-*/
 var btn = document.getElementById("btn+")
 
 btn.onclick = function() {
