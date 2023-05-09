@@ -4,7 +4,6 @@ import code from "../images/giphy.gif";
 
 const NavContainer = styled("div")({
   padding: "24px 20px 12px",
-  borderBottom: "0.5px solid #F6F1F1",
   display: "flex",
   justifyContent: "space-between",
   fontWeight: '700'
