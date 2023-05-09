@@ -13,7 +13,8 @@ import self from "../images/santushti.jpg";
 import bg from "../images/hero_bg.gif";
 import world from "../images/giphy (1).gif";
 const HeroSection = styled(Box)({
-  padding: "30px",
+  padding: "50px",
+  border: "0.5px solid #F6F1F1",
   display: "grid",
   gridTemplateColumns: "60% auto",
 });
