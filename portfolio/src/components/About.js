@@ -1,14 +1,17 @@
 import { Typography, styled, Box } from "@mui/material";
 import React from "react";
+import line from "../images/line.gif"
 import img2 from "../images/6579900.jpg";
 
 const AboutSection = styled(Box)({
   padding: "30px 50px",
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center'
 });
 const AboutTitle = styled(Typography)({
   fontSize: "48px",
   fontWeight: "800",
-  marginBottom: "10px",
 });
 const AboutContent = styled(Box)({
   display: "grid",
@@ -33,6 +36,7 @@ function About() {
       <AboutTitle align="center">
         About <span style={{ color: "#29b2cb" }}>ME ...</span>
       </AboutTitle>
+      <img style={{height: '20px', width: '40%'}} src={line} />
       <AboutContent>
         <Text align="center">
           Innovative individual with a passion for coding, exploring
