@@ -1,7 +1,6 @@
 import React from "react";
 import { styled, Button } from "@mui/material";
-import code from "./giphy.gif";
-import code1 from "./giphy (1).gif";
+import code from "../images/giphy.gif";
 
 const NavContainer = styled("div")({
   padding: "24px 20px 12px",

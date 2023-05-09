@@ -9,9 +9,9 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import self from "./santushti.jpg";
-import bg from "./hero_bg.gif";
-import world from "./giphy (1).gif";
+import self from "../images/santushti.jpg";
+import bg from "../images/hero_bg.gif";
+import world from "../images/giphy (1).gif";
 const HeroSection = styled(Box)({
   padding: "30px",
   display: "grid",
@@ -47,7 +47,7 @@ function Hero() {
         <Title>
           Hello World
           <span>
-            <img src={world} style={{height: '50px'}} />
+            <img src={world} style={{height: '50px'}} alt="content" />
           </span>
         </Title>
         <Title>
@@ -74,8 +74,8 @@ function Hero() {
       </HeroContent>
 
       <HeroImg>
-        <img src={self} style={{ width: "100%" }} />
-        <img src={bg} style={{position: 'absolute', height: '15%', right: '5%'}} />
+        <img src={self} style={{ width: "100%" }} alt="santushti sharma" />
+        <img src={bg} style={{position: 'absolute', height: '15%', right: '5%'}} alt="effect for hero section"/>
       </HeroImg>
     </HeroSection>
   );
