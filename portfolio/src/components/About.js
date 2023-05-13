@@ -1,25 +1,26 @@
-import { Typography, styled, Box } from "@mui/material";
 import React from "react";
-import line from "../images/line.gif"
-import img2 from "../images/6579900.jpg";
+//mui
+import { Typography, styled, Box } from "@mui/material";
+//images
+import line from "../images/line.gif";
+import about from "../images/aboutImg.jpg";
 
 const AboutSection = styled(Box)({
   padding: "30px 50px",
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center'
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 });
 const AboutTitle = styled(Typography)({
-  fontSize: "48px",
+  fontSize: "56px",
   fontWeight: "800",
 });
 const AboutContent = styled(Box)({
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gap: "30px",
-  padding: "0 100px",
+  gap: "20px",
+  padding: "0 50px",
 });
-
 const Text = styled(Typography)({
   fontSize: "18px",
   fontWeight: "500",
@@ -30,13 +31,14 @@ const ImgBox = styled(Box)({
   display: "flex",
   justifyContent: "center",
 });
+//content of the about section to be modified
 function About() {
   return (
     <AboutSection>
       <AboutTitle align="center">
         About <span style={{ color: "#29b2cb" }}>ME ...</span>
       </AboutTitle>
-      <img style={{height: '20px', width: '40%'}} src={line} />
+      <img style={{ height: "20px", width: "40%" }} src={line} alt="line" />
       <AboutContent>
         <Text align="center">
           Innovative individual with a passion for coding, exploring
@@ -48,7 +50,7 @@ function About() {
           and connect with new people.
         </Text>
         <ImgBox>
-          <img style={{ width: "80%" }} src={img2} alt="coder" />
+          <img style={{ width: "80%" }} src={about} alt="coder" />
         </ImgBox>
       </AboutContent>
     </AboutSection>
