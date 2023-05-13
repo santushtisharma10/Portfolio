@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//mui
 import {
   Box,
   Button,
@@ -9,14 +10,16 @@ import {
   Typography,
   styled,
 } from "@mui/material";
+//images
 import self from "../images/santushti.jpg";
 import bg from "../images/hero_bg.gif";
-import world from "../images/giphy (1).gif";
+import world from "../images/heroGif.gif";
+
 const HeroSection = styled(Box)({
   padding: "50px",
   border: "0.5px solid #F6F1F1",
   display: "grid",
-  gridTemplateColumns: "60% auto",
+  gridTemplateColumns: "65% auto",
 });
 const HeroContent = styled(Box)({
   display: 'flex',
@@ -32,7 +35,7 @@ const HeroImg = styled(Box)({
 });
 const ConnectButton = styled(Button)({});
 
-//subheading behind intro
+//content
 //button styles
 
 function Hero() {
