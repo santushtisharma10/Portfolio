@@ -1,41 +1,41 @@
 import React from "react";
-import { styled, Button } from "@mui/material";
+import { styled, Button, Box } from "@mui/material";
 import code from "../images/giphy.gif";
 
-const NavContainer = styled("div")({
-  padding: "24px 20px 12px",
-  display: "flex",
-  justifyContent: "space-between",
-  fontWeight: '700'
+const NavContainer = styled(Box)({
+  padding: "24px 50px",
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'space-between',
+  position: 'fixed',
+  color: "#80cbe0",
+  fontWeight: 600,
+  zIndex: 1000,
+  backgroundColor: 'white'
 });
-const Logo = styled("div")({
+//add shadow at bottom of nav container
+//mobile view of navbar to be added
+const Logo = styled('img')({
   height: "50px",
 });
-const NavMenu = styled("div")({
+const NavMenu = styled(Box)({
   display: "flex",
   alignItems: "center",
 });
-const NavLink = styled("div")({
-  padding: "0 32px",
-  cursor: "pointer",
-  ":hover": {},
-
+const NavLink = styled(Box)({
+  padding: "0 24px",
+  cursor: 'pointer'
 });
 const DownloadButton = styled(Button)({
-  marginLeft: "16px",
   fontFamily: 'inherit'
 });
 
 function Navbar() {
   return (
     <NavContainer>
-      <Logo>
-        <img
-          style={{ height: "100%" }}
-          src={code}
-          alt="code navbar gif"
-        />
-        {/* <img style={{ height: "100%" }} src={code1} alt="code navbar gif" /> */}
+       <Logo src={code}
+          alt="code navbar gif">
+       
       </Logo>
       <NavMenu>
         <NavLink>About</NavLink>
@@ -43,7 +43,7 @@ function Navbar() {
         <NavLink>Work</NavLink>
         <NavLink> Experience</NavLink>
         <NavLink>Contact</NavLink>
-        <DownloadButton variant="contained">Download Resume</DownloadButton>
+        <DownloadButton variant="contained">Download Resume</DownloadButton> 
       </NavMenu>
     </NavContainer>
   );
