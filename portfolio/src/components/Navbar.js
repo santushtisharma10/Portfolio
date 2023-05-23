@@ -112,7 +112,7 @@ function Navbar() {
           <NavList />
         )}
       </NavHeader>
-      <SideMenu className={`${isMenuOpen == true ? "active" : ""}`}>
+      <SideMenu className={`${isMenuOpen === true ? "active" : ""}`}>
         <IconButton
           onClick={() => setMenuOpen(false)}
           style={{ color: "white" }}
