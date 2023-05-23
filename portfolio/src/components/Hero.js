@@ -16,7 +16,7 @@ import bg from "../images/hero_bg.gif";
 import world from "../images/heroGif.gif";
 
 const HeroSection = styled(Box)({
-  padding: "50px",
+  padding: "100px 50px",
   border: "0.5px solid #F6F1F1",
   display: "grid",
   gridTemplateColumns: "65% auto",
@@ -34,9 +34,6 @@ const HeroImg = styled(Box)({
   justifyContent: "center",
 });
 const ConnectButton = styled(Button)({});
-
-//content
-//button styles
 
 function Hero() {
   const [open, setOpen] = useState(false);
@@ -86,3 +83,8 @@ function Hero() {
 }
 
 export default Hero;
+
+//things to do
+//button styles
+//connect dialog box
+//mobile view of hero section
