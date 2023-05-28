@@ -18,20 +18,28 @@ const AboutTitle = styled(Typography)({
 const AboutContent = styled(Box)({
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gap: "20px",
-  padding: "0 50px",
+  gap: "50px",
+  padding: '50px',
+  "@media screen and (max-width: 900px)": {
+    gridTemplateColumns: "repeat(1, 1fr)",
+  },
 });
 const Text = styled(Typography)({
-  fontSize: "18px",
+  fontSize: "24px",
   fontWeight: "500",
   display: "flex",
   alignItems: "center",
+  "@media screen and (max-width: 1100px)": {
+    fontSize: '20px'
+  }
 });
 const ImgBox = styled(Box)({
   display: "flex",
   justifyContent: "center",
+  "@media screen and (max-width: 900px)": {
+    display: "none",
+  },
 });
-//content of the about section to be modified
 function About() {
   return (
     <AboutSection>
@@ -44,13 +52,10 @@ function About() {
           Innovative individual with a passion for coding, exploring
           technologies and problem solving. Commited to learning and development
           to achieve better results. Loves to take on new challenges and connect
-          with new people. Innovative individual with a passion for coding,
-          exploring technologies and problem solving. Commited to learning and
-          development to achieve better results. Loves to take on new challenges
-          and connect with new people.
+          with new people. 
         </Text>
         <ImgBox>
-          <img style={{ width: "80%" }} src={about} alt="coder" />
+          <img width="100%" src={about} alt="coder" />
         </ImgBox>
       </AboutContent>
     </AboutSection>
@@ -58,3 +63,6 @@ function About() {
 }
 
 export default About;
+
+//things to do
+// content needs to be modified
